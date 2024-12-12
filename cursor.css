@@ -1,0 +1,23 @@
+/* 기본 커서를 숨기지 않도록 설정 */
+body {
+    cursor: default;
+}
+
+  /* 마우스 우측 하단에 나타나는 텍스트 박스 스타일 */
+.cursor-textbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.9); /* 반투명한 배경 */
+    border: 1px solid black;
+    color: rgba(0, 0, 0);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* 둥근 모서리 */
+    pointer-events: none; /* 박스가 다른 요소와 충돌하지 않도록 */
+    z-index: 9999;
+    opacity: 0.9;
+    transition: opacity 0.5s ease; /* 부드럽게 나타나고 사라지도록 */
+}

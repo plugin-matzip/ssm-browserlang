@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",                   // 변환할 ECMAScript 버전
+    "module": "esnext",                 // 모듈 시스템
+    "moduleResolution": "node",         // 모듈 해석 방식
+    "strict": true,                     // 엄격한 타입 검사를 활성화
+    "esModuleInterop": true,            // CommonJS와 ES 모듈 호환
+    "skipLibCheck": true,               // 타입 선언 파일 검사 생략
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성 체크
+    "outDir": "./dist",                 // 컴파일된 파일의 출력 폴더
+    "rootDir": "./src",                 // 소스 파일의 루트 디렉토리
+    "sourceMap": true,                  // 소스 맵 생성 (디버깅 시 유용)
+    "declaration": true,                // `.d.ts` 파일 생성 (타입 정의)
+    "allowJs": true,                    // JavaScript 파일도 컴파일 대상에 포함
+    "noImplicitAny": true,              // any 타입을 암묵적으로 사용하지 않도록 강제
+    "skipDefaultLibCheck": true,        // 기본 라이브러리 파일 검사 생략
+    "lib": ["esnext", "dom"],           // 포함할 라이브러리
+    "resolveJsonModule": true,          // JSON 파일을 모듈로 import 할 수 있게 설정
+    "isolatedModules": true,            // 각 파일을 독립적인 모듈로 처리
+    "jsx": "react-jsx"                  // React JSX 코드 변환 (React 17 이상에서 사용)
+  },
+  "include": [
+    "src/**/*.ts",                      // 컴파일할 파일의 경로
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",                     // 컴파일에서 제외할 폴더
+    "dist"                              // 출력 폴더 제외
+  ]
+}

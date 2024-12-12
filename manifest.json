@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "WIL",
+    "description": "What is your Language on Browser",
+    "version": "1.0",
+    "icons": {
+        "16": "lang.png",
+        "48": "lang.png",
+        "128": "lang.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "lang.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["cursor.css"],
+            "js": ["cursor.js"]
+        }
+    ]
+}
